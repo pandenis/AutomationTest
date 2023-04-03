@@ -10,6 +10,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 public class AssertEx1 {
     WebDriver webDriver;
     @BeforeClass
@@ -51,7 +53,7 @@ public class AssertEx1 {
         String actualResult = fieldYourBMI.getAttribute("value");
 
 
-            Assert.assertEquals(expectedResult, actualResult, "The value is wrong!");
+            assertEquals(expectedResult, actualResult, "The value is wrong!");
 
 
 
